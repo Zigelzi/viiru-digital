@@ -1,0 +1,39 @@
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--body-font);
+    margin: 0;
+}
+
+.logo-container {
+    padding: var(--p-s)
+}
+
+.hero-container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5vh;
+}
+
+.hero-content {
+    margin: 20vh var(--mg-xl) 0;   
+}
+
+.body-content {
+    max-width: var(--content-width);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn {
+    border: none;
+    padding: var(--p-s);
+
+    background: var(--primary-400);
+    transition: all .3s;
+
+    &:hover {
+        background: var(--primary-200);
+    }
+}

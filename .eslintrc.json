@@ -5,6 +5,8 @@
     },
     "extends": [
         "plugin:vue/essential",
+        "plugin:prettier/recommended",
+        "@vue/prettier",
         "airbnb-base"
     ],
     "parserOptions": {

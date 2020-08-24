@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: var(--body-font);
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-xxl {
+    font-size: var(--text-60);
+    line-height: 1;
+}
+
+.text-l {
+    font-size: var(--text-24);
+}
+
+.logo-text {
+    line-height: 1;
+    font-family: var(--heading-font);
+}
+
+.logo-text-l {
+    font-size: var(--text-30);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo-text-m {
+    font-size: var(--text-18);
+    font-weight: 400;
+}
+
+.hero-text {
+    font-weight: 300;
+    font-family: var(--body-text);
+}
+
+.hero-text-s {
+    font-size: var(--text-18);
+}
+
+.text-normal {
+    font-weight: 400;
+}
+
+.text-bold {
+    font-weight: 600;
+}
+
+.text-pink {
+    color: var(--pink)
+}
+
+.text-jobilla {
+    color: #d001b7;
+}

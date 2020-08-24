@@ -1,0 +1,44 @@
+:root {
+    --primary-400: #d8d8d8;
+    --primary-200: #ebebeb;
+    --secondary: #a1a1a1;
+
+    --gray: #dbdbdb;
+    --pink: #d8959e;
+    --black: #0e0e0e;
+    --white: #f3f3f3;
+
+    // Font stack
+    --heading-font: 'Eczar', serif;
+    --body-font: 'Open Sans', sans-serif;
+
+    // Typography
+    --text-12: 12px;
+    --text-14: 14px;
+    --text-16: 16px;
+    --text-18: 18px;
+    --text-20: 20px;
+    --text-24: 24px;
+    --text-30: 30px;
+    --text-36: 36px;
+    --text-48: 48px;
+    --text-60: 60px;
+    --text-72: 72px;
+
+    // Paddings
+    --p-xs: 5px;
+    --p-s: 10px;
+    --p-m: 15px;
+    --p-l: 25px;
+    --p-xl: 35px;
+    --p-xxl: 55px;
+    // Margins
+    --mg-xs: 5px;
+    --mg-s: 10px;
+    --mg-m: 15px;
+    --mg-l: 25px;
+    --mg-xl: 35px;
+    --mg-xxl: 55px;
+
+    --content-width: 660px;
+}
