@@ -41,14 +41,7 @@ a {
     font-weight: 400;
 }
 
-.hero-text {
-    font-weight: 300;
-    font-family: var(--body-text);
-}
 
-.hero-text-s {
-    font-size: var(--text-18);
-}
 
 .text-normal {
     font-weight: 400;
@@ -56,6 +49,10 @@ a {
 
 .text-bold {
     font-weight: 600;
+}
+
+.text-capitalized {
+    text-transform: capitalize;
 }
 
 .text-pink {

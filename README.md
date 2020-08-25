@@ -1,4 +1,5 @@
 # Viiru Digital
+[![Netlify Status](https://api.netlify.com/api/v1/badges/26c9e59e-3d8c-4547-a4ad-e1fa4920d472/deploy-status)](https://app.netlify.com/sites/viiru-digital/deploys)
 Websites for Viiru Digital, the web development and digital service company of Miika Savela.
 
 Introducing products and services for potential customers and demonstrating my expertise in web development. Works also as testing groud for all sorts of fun web dev related stuff!

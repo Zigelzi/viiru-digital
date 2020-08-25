@@ -6,17 +6,36 @@ body {
 }
 
 .logo-container {
-    padding: var(--p-s)
+    padding: var(--p-s);
 }
 
 .hero-container {
-    height: 95vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: 5vh;
+    margin-bottom: var(--mg-xl);
+    position: relative;
+
+    background-image: url("/VD_Hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(75, 75, 75, .2)
+    }
 }
 
 .hero-content {
+    z-index: 2;
+}
+
+.hero-text-content {
     margin: 20vh var(--mg-xl) 0;   
 }
 
