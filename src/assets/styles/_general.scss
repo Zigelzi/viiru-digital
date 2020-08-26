@@ -13,10 +13,9 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    margin-bottom: var(--mg-xl);
     position: relative;
 
-    background-image: url("/VD_Hero.jpg");
+    background-image: url("/vd_hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -27,7 +26,7 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(75, 75, 75, .2)
+        background: linear-gradient(to top, var(--black), rgba(14,14,14, .6) 30%, transparent 60%);
     }
 }
 
@@ -39,7 +38,7 @@ body {
     margin: 20vh var(--mg-xl) 0;   
 }
 
-.body-content {
+.text-content {
     max-width: var(--content-width);
     width: 90%;
     margin: 0 auto;
@@ -47,12 +46,33 @@ body {
 
 .btn {
     border: none;
-    padding: var(--p-s);
+    padding: var(--p-m);
+    margin: var(--mg-s) 0;
 
-    background: var(--primary-400);
+    background: var(--pink);
     transition: all .3s;
 
     &:hover {
         background: var(--primary-200);
     }
+}
+
+.project-step {
+    border-bottom: 1px solid rgba(150, 150, 150, 0.5);
+    margin-bottom: var(--mg-m);
+
+    h4 {
+        font-weight: 600;
+        margin-bottom: var(--mg-s);
+    }
+
+    p {
+        margin-top: var(--mg-s);
+        margin-bottom: var(--mg-m);
+    }
+}
+
+.bg-white {
+    background: var(--white);
+    color: var(--black);
 }
