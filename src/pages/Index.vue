@@ -4,8 +4,11 @@
       <div class="hero-container">
         <div class="hero-content">
           <div class="logo-container">
-            <h1 class="logo-text-l logo-text">Viiru</h1>
-            <h1 class="logo-text-m logo-text">Digital</h1>
+            <img
+              class="logo-svg logo-bg-clip"
+              src="/viiru_logo_band_head_opt.svg"
+              alt="Logo of Viiru Digital"
+            />
           </div>
           <v-hero-title />
         </div>
@@ -122,7 +125,7 @@
 </template>
 
 <script>
-import HeroTitle from '@/components/HeroTitle'
+import HeroTitle from '@/components/HeroTitle';
 
 export default {
   metaInfo: {
@@ -131,7 +134,7 @@ export default {
   components: {
     'v-hero-title': HeroTitle,
   },
-}
+};
 </script>
 
 <style></style>
