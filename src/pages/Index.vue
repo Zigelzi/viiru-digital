@@ -5,7 +5,7 @@
         <div class="hero-content">
           <div class="logo-container">
             <img
-              class="logo-svg logo-bg-clip"
+              class="logo-m logo-bg-clip"
               src="/viiru_logo_band_head_opt.svg"
               alt="Logo of Viiru Digital"
             />
@@ -16,7 +16,7 @@
     </section>
     <div class="">
       <section id="introduction">
-        <div class="text-content ph-xl">
+        <div class="text-content pv-xl">
           <h1 class="text-l">Digitaalisten palveluiden moniosaaja</h1>
           <p>Moi!</p>
           <p>
@@ -42,7 +42,7 @@
         </div>
       </section>
       <section id="website-project">
-        <div class="ph-xl bg-white">
+        <div class="pv-xl bg-white">
           <div class="text-content">
             <h1 class="text-l">Haluatko verkkosivut?</h1>
             <p>
@@ -109,23 +109,20 @@
       </section>
       <!-- TODO - Contact Form here -->
       <section id="contact-me">
-        <div class="text-content ph-xl">
+        <div class="text-content pv-xl">
           <v-contact-form />
         </div>
       </section>
     </div>
 
-    <footer>
-      <div>
-        <p>Footer text</p>
-      </div>
-    </footer>
+    <v-footer />
   </Layout>
 </template>
 
 <script>
 import HeroTitle from '@/components/HeroTitle';
 import ContactForm from '@/components/ContactForm';
+import Footer from '@/components/Footer';
 
 export default {
   metaInfo: {
@@ -133,7 +130,8 @@ export default {
   },
   components: {
     'v-hero-title': HeroTitle,
-    "v-contact-form": ContactForm,
+    'v-contact-form': ContactForm,
+    'v-footer': Footer,
   },
 };
 </script>

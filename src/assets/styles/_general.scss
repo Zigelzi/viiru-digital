@@ -84,7 +84,7 @@ body {
     color: var(--black);
 }
 
-.logo-svg {
+.logo-m {
     height: 70px;
 }
 
@@ -92,4 +92,23 @@ body {
     background: var(--white);
     padding: var(--p-s) var(--p-xl) var(--p-s) var(--p-s);
     clip-path: polygon(0% 100%, 80% 100%, 100% 0%, 0% 0%);
+}
+
+.flex-container {
+    display:flex;
+}
+
+.fja-center {
+    // Justify and Align
+    justify-content: center;
+    align-content: center;
+}
+
+.icon-m {
+    height: 50px;
+}
+
+.icon-svg {
+    transition: fill .4s ease;
+    fill: var(--gray-600);
 }

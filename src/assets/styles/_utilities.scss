@@ -46,27 +46,52 @@
 }
 
 // Paddings
-.ph-xs {
+.pv-xs {
     padding-top: var(--p-xs);
     padding-bottom: var(--p-xs);
 }
 
-.ph-s {
+.pv-s {
     padding-top: var(--p-s);
     padding-bottom: var(--p-s);
 }
 
-.ph-m {
+.pv-m {
     padding-top: var(--p-m);
     padding-bottom: var(--p-m);
 }
 
-.ph-l {
+.pv-l {
     padding-top: var(--p-l);
     padding-bottom: var(--p-l);
 }
 
-.ph-xl {
+.pv-xl {
     padding-top: var(--p-xl);
     padding-bottom: var(--p-xl);
+}
+
+.ph-xs {
+    padding-left: var(--p-xs);
+    padding-right: var(--p-xs);
+}
+
+.ph-s {
+    padding-left: var(--p-s);
+    padding-right: var(--p-s);
+}
+
+.ph-m {
+    padding-left: var(--p-m);
+    padding-right: var(--p-m);
+}
+
+.ph-l {
+    padding-left: var(--p-l);
+    padding-right: var(--p-l);
+}
+
+.ph-xl {
+    padding-left: var(--p-xl);
+    padding-right: var(--p-xl);
 }
