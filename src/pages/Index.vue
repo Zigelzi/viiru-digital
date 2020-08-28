@@ -108,10 +108,9 @@
         </div>
       </section>
       <!-- TODO - Contact Form here -->
-      <section id="interests">
-        <div class="text-content">
-          <h1>Kiinnostuksen kohteet</h1>
-          <!-- <v-interest-slide /> -->
+      <section id="contact-me">
+        <div class="text-content ph-xl">
+          <v-contact-form />
         </div>
       </section>
     </div>
@@ -126,6 +125,7 @@
 
 <script>
 import HeroTitle from '@/components/HeroTitle';
+import ContactForm from '@/components/ContactForm';
 
 export default {
   metaInfo: {
@@ -133,6 +133,7 @@ export default {
   },
   components: {
     'v-hero-title': HeroTitle,
+    "v-contact-form": ContactForm,
   },
 };
 </script>

@@ -1,5 +1,5 @@
-// .prettierrc.js
-module.exports = {
-  singleQuote: true,
-  semi: false
-}
+// // .prettierrc.js
+// module.exports = {
+//   singleQuote: true,
+//   semi: false
+// }

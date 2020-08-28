@@ -49,11 +49,18 @@ body {
     padding: var(--p-m);
     margin: var(--mg-s) 0;
 
-    background: var(--pink);
+    background: var(--primary-400);
+    color: var(--gray-900);
     transition: all .3s;
+    transform-origin: center;
 
     &:hover {
-        background: var(--primary-200);
+        background: var(--primary-500);
+        transform: scale(1.01)
+    }
+
+    &:active {
+        transform: scale(0.98);
     }
 }
 
