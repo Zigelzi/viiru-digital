@@ -51,10 +51,12 @@
               ollessa yksi osa palkastani, pystyn toteutaamaan projektisi kohtuu
               kustannuksin.
             </p>
-            <button class="btn">Aloitetaan projekti yhdessä!</button>
+            <div class="pt-m pb-xl">
+              <a href="#contact-me" class="btn">Aloitetaan projekti yhdessä!</a>
+            </div>
           </div>
           <div class="text-content">
-            <h3 class="text-l mh-l">Projektin kulku</h3>
+            <h3 class="text-l mt-l mb-m">Projektin kulku</h3>
             <div class="project-step">
               <h4>Ollaan yhteyksissä</h4>
               <p>
@@ -110,7 +112,17 @@
       <!-- TODO - Contact Form here -->
       <section id="contact-me">
         <div class="text-content pv-xl">
-          <v-contact-form />
+          <transition name="fade">
+            <div v-if="formVisible">
+              <v-contact-form @formSubmitted="updateFormVisibility" />
+            </div>
+            <div v-else>
+              <p>{{ successMessage }}</p>
+              <button class="btn" @click="resetFormVisibility">
+                Uusi yhteydenottopyyntö
+              </button>
+            </div>
+          </transition>
         </div>
       </section>
     </div>
@@ -132,6 +144,21 @@ export default {
     'v-hero-title': HeroTitle,
     'v-contact-form': ContactForm,
     'v-footer': Footer,
+  },
+  data() {
+    return {
+      formVisible: true,
+      successMessage: '',
+    };
+  },
+  methods: {
+    updateFormVisibility(updateMessage) {
+      this.successMessage = updateMessage;
+      this.showForm = false;
+    },
+    resetFormVisibility() {
+      this.showForm = true;
+    },
   },
 };
 </script>

@@ -4,11 +4,14 @@
     <p class="mb-l">Yhteinen projekti alkaa jättämällä yhteystietosi.</p>
     <form
       name="contact-form"
+      id="contact-form"
       method="post"
+      action="/formsuccess"
       data-netlify="true"
-      data-netlify-honeypot="bot-field"
+      data-netlify-honeypot="ropotti-field"
+      @submit.prevent="sendForm"
     >
-      <input type="hidden" name="form-name" value="ask-question" />
+      <input class="ropotti" name="ropotti-field" value="ask-question" />
       <div class="input-container">
         <input
           type="text"
@@ -16,6 +19,7 @@
           name="contact-name"
           id="contact-name"
           class="form-input input-text"
+          v-model="formData.name"
         />
         <label for="contact-name" class="form-label text-input-label">
           Nimi
@@ -28,8 +32,8 @@
           name="contact-both"
           id="contact-both"
           value="both"
-          v-model="selectedContactMethod"
           class="form-input input-radio-option"
+          v-model="formData.contactMethod"
         />
         <label for="contact-both" class="form-label input-radio-label">
           Puhelin ja sähköposti
@@ -39,7 +43,7 @@
           name="contact-phone"
           id="contact-phone"
           value="phone"
-          v-model="selectedContactMethod"
+          v-model="formData.contactMethod"
           class="form-input input-radio-option"
         />
         <label for="contact-phone" class="form-label input-radio-label">
@@ -50,7 +54,7 @@
           name="contact-email"
           id="contact-email"
           value="email"
-          v-model="selectedContactMethod"
+          v-model="formData.contactMethod"
           class="form-input input-radio-option"
         />
         <label for="contact-email" class="form-label input-radio-label">
@@ -60,8 +64,8 @@
       <div id="contact-information">
         <div
           v-show="
-            selectedContactMethod === 'email' ||
-            selectedContactMethod === 'both'
+            formData.contactMethod === 'email' ||
+            formData.contactMethod === 'both'
           "
           class="input-container"
         >
@@ -71,6 +75,7 @@
             name="email"
             id="email-field"
             class="form-input input-text"
+            v-model="formData.email"
           />
           <label for="email-field" class="form-label text-input-label">
             Sähköpostiosoite
@@ -78,17 +83,18 @@
         </div>
         <div
           v-show="
-            selectedContactMethod === 'phone' ||
-            selectedContactMethod === 'both'
+            formData.contactMethod === 'phone' ||
+            formData.contactMethod === 'both'
           "
           class="input-container"
         >
           <input
-            type="phone"
+            type="tel"
             name="phone"
             placeholder=" "
             id="phone-field"
             class="form-input input-text"
+            v-model="formData.phone"
           />
           <label for="phone-field" class="form-label text-input-label">
             Puhelinnumero
@@ -102,6 +108,7 @@
           name="additional-information"
           id="additional-information"
           class="form-input input-text input-textarea"
+          v-model="formData.additionalInformation"
         />
         <label
           for="additional-information"
@@ -118,10 +125,44 @@
 export default {
   data() {
     return {
-      selectedContactMethod: null,
+      formData: {
+        name: "",
+        contactMethod: "",
+        phone: "",
+        email: "",
+        additionalInformation: "",
+      },
+      submitMessage: "",
     };
   },
-};
+  methods: {
+    encodeFormData(formData) {
+      /* eslint-disable */
+      return Object.keys(formData).map(key => encodeURIComponent(key) + '=' + 
+      encodeURIComponent(formData[key])).join("&")
+    },
+    /* eslint-disable */
+    sendForm(event) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: this.encodeFormData({
+          "form-name": event.target.getAttribute("name"),
+          ...this.formData,
+        })
+      })
+      .then(() => {
+        this.submitMessage = 'Mahtavaa, ollaan yhteydessä!'
+        this.$emit('formSubmitted', this.submitMessage)
+      })
+      .catch((error) => {
+        console.error(error)
+        this.$emit('formSubmitted', this.submitMessage)
+        
+      })
+    }
+  }
+}
 </script>
 
 <style lang="scss">
@@ -214,5 +255,9 @@ export default {
   &:active + .input-radio-label {
     transform: scale(0.98);
   }
+}
+
+.ropotti {
+  display: none;
 }
 </style>
