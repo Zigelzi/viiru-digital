@@ -17,6 +17,10 @@ export default function (Vue, { router, head, isClient }) {
     name: 'og:image',
     content: `${config.siteName}/viiru_favicon_192x192.png`,
 
+    key: 'og:url',
+    name: 'og:url',
+    content: `${config.siteName}`,
+
     // Twitter SoMe sharing
 
     key: 'twitter:description',
@@ -28,13 +32,13 @@ export default function (Vue, { router, head, isClient }) {
     content: `${config.siteName}/viiru_favicon_192x192.png`,
   })
 
-  router.beforeEach((to, _from, next) => {
-    // Build URL for every site automatically with Vue-Router
-    head.meta.push({
-      key: 'og:url',
-      name: 'og:url',
-      content: config.siteName + to.path,
-    })
-    next()
-  })
+  // router.beforeEach((to, _from, next) => {
+  //   // Build URL for every site automatically with Vue-Router
+  //   head.meta.push({
+  //     key: 'og:url',
+  //     name: 'og:url',
+  //     content: config.siteName + to.path,
+  //   })
+  //   next()
+  // })
 }
