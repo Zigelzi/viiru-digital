@@ -19,6 +19,7 @@
         <div class="text-content pv-xl">
           <h1 class="text-l">Digitaalisten palveluiden moniosaaja</h1>
           <p>Moi!</p>
+
           <p>
             Olen Miika Savela, digitaalisten tuotteiden ja tekniikan kanssa
             peuhaamista rakastava kaveri Lohjalta.
@@ -109,7 +110,6 @@
           </div>
         </div>
       </section>
-      <!-- TODO - Contact Form here -->
       <section id="contact-me">
         <div class="text-content pv-xl">
           <transition name="fade">
@@ -132,9 +132,9 @@
 </template>
 
 <script>
-import HeroTitle from '@/components/HeroTitle';
-import ContactForm from '@/components/ContactForm';
-import Footer from '@/components/Footer';
+import HeroTitle from '@/components/HeroTitle'
+import ContactForm from '@/components/ContactForm'
+import Footer from '@/components/Footer'
 
 export default {
   metaInfo: {
@@ -149,18 +149,18 @@ export default {
     return {
       formVisible: true,
       successMessage: '',
-    };
+    }
   },
   methods: {
     updateFormVisibility(updateMessage) {
-      this.successMessage = updateMessage;
-      this.showForm = false;
+      this.successMessage = updateMessage
+      this.showForm = false
     },
     resetFormVisibility() {
-      this.showForm = true;
+      this.showForm = true
     },
   },
-};
+}
 </script>
 
 <style></style>

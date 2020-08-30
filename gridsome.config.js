@@ -5,7 +5,10 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "Viiru Digital",
-  icon: "./src/viiru_favicon_192x192.png",
+  siteName: 'Viiru Digital',
+  siteDescription: 'Digitaalisia palveluita ja verkkosivuja',
+  siteUrl: 'https://viiru.fi',
+  titleTemplate: `%s | Viiru Digital`,
+  icon: './src/viiru_favicon_192x192.png',
   plugins: [],
-};
+}
