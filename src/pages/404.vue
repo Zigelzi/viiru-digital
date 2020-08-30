@@ -15,3 +15,10 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  metaInfo: {
+    title: 'Sivua ei löytynyt',
+  },
+}
+</script>

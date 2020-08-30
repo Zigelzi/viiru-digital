@@ -15,11 +15,11 @@ export default function (Vue, { router, head, isClient }) {
 
     key: 'og:image',
     name: 'og:image',
-    content: `${config.siteName}/viiru_favicon_192x192.png`,
+    content: `https://viiru.fi/viiru_favicon_192x192.png`,
 
     key: 'og:url',
     name: 'og:url',
-    content: `${config.siteName}`,
+    content: 'Digitaalisia palveluita ja verkkosivuja',
 
     // Twitter SoMe sharing
 
@@ -29,7 +29,7 @@ export default function (Vue, { router, head, isClient }) {
 
     key: 'twitter:image',
     name: 'twitter:image',
-    content: `${config.siteName}/viiru_favicon_192x192.png`,
+    content: `https://viiru.fi/viiru_favicon_192x192.png`,
   })
 
   // router.beforeEach((to, _from, next) => {
