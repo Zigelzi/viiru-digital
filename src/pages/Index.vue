@@ -40,6 +40,7 @@
             rekrytointiohjelmistoa toimittavassa yrityksessa nimeltä
             <a class="text-jobilla" href="https://jobilla.com/">Jobilla</a>
           </p>
+          <!-- <v-profile-card /> -->
         </div>
       </section>
       <section id="website-project">
@@ -135,6 +136,7 @@
 import HeroTitle from '@/components/HeroTitle'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
+import ProfileCard from '@/components/ProfileCard'
 
 export default {
   metaInfo: {
@@ -144,6 +146,7 @@ export default {
     'v-hero-title': HeroTitle,
     'v-contact-form': ContactForm,
     'v-footer': Footer,
+    'v-profile-card': ProfileCard,
   },
   data() {
     return {
