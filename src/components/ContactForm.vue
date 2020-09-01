@@ -105,7 +105,7 @@
         <textarea
           type="textarea"
           placeholder=" "
-          name="additional-information"
+          name="additionalInformation"
           id="additional-information"
           class="form-input input-text input-textarea"
           v-model="formData.additionalInformation"
