@@ -126,42 +126,53 @@ export default {
   data() {
     return {
       formData: {
-        name: "",
-        contactMethod: "",
-        phone: "",
-        email: "",
-        additionalInformation: "",
+        name: '',
+        contactMethod: '',
+        phone: '',
+        email: '',
+        additionalInformation: '',
       },
-      submitMessage: "",
-    };
+      submitMessage: '',
+    }
   },
   methods: {
     encodeFormData(formData) {
-      /* eslint-disable */
-      return Object.keys(formData).map(key => encodeURIComponent(key) + '=' + 
-      encodeURIComponent(formData[key])).join("&")
+      console.log(
+        Object.keys(formData)
+          .map(
+            (key) =>
+              encodeURIComponent(key) + '=' + encodeURIComponent(formData[key])
+          )
+          .join('&')
+      )
+      return Object.keys(formData)
+        .map(
+          (key) =>
+            encodeURIComponent(key) + '=' + encodeURIComponent(formData[key])
+        )
+        .join('&')
     },
-    /* eslint-disable */
     sendForm(event) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      console.log(event.target.getAttribute('name'))
+      console.log(this.formData)
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: this.encodeFormData({
-          "form-name": event.target.getAttribute("name"),
+          'form-name': event.target.getAttribute('name'),
           ...this.formData,
+        }),
+      })
+        .then(() => {
+          this.submitMessage = 'Mahtavaa, ollaan yhteydessä!'
+          this.$emit('formSubmitted', this.submitMessage)
         })
-      })
-      .then(() => {
-        this.submitMessage = 'Mahtavaa, ollaan yhteydessä!'
-        this.$emit('formSubmitted', this.submitMessage)
-      })
-      .catch((error) => {
-        console.error(error)
-        this.$emit('formSubmitted', this.submitMessage)
-        
-      })
-    }
-  }
+        .catch((error) => {
+          console.error(error)
+          this.$emit('formSubmitted', this.submitMessage)
+        })
+    },
+  },
 }
 </script>
 
