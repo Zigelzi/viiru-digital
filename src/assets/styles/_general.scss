@@ -105,11 +105,12 @@ body {
     align-content: center;
 }
 
-.icon-m {
-    height: 50px;
+.vp-fade-enter {
+    transition: all .5s ease-out;
 }
 
-.icon-svg {
-    transition: fill .4s ease;
-    fill: var(--gray-600);
+.vp-fade-before-enter {
+    transform: scale(0.8);
+    opacity: 0;
+    
 }

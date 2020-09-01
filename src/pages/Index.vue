@@ -16,19 +16,16 @@
     </section>
     <div class="">
       <section id="introduction">
-        <div class="text-content pv-xl">
-          <h1 class="text-l">Digitaalisten palveluiden moniosaaja</h1>
-          <p>Moi!</p>
-
+        <div class="text-content pv-xl" v-vpshow>
+          <h1 class="text-xxl text-center">Moi!</h1>
           <p>
             Olen Miika Savela, digitaalisten tuotteiden ja tekniikan kanssa
             peuhaamista rakastava kaveri Lohjalta.
           </p>
           <p>
-            <span class="text-pink">Viiru Digital</span> on yksi
-            harrasteprojekteistani, jonka puitteissa kehitän osaamistani
-            verkkosivujen ja digitaalisten tuotteiden suunnittelun toteuttamisen
-            parissa.
+            <span class="text-pink">Viiru Digital</span> on yksi projekteistani,
+            jonka puitteissa kehitän osaamistani verkkosivujen ja digitaalisten
+            tuotteiden suunnittelun toteuttamisen parissa.
           </p>
           <p>
             Teen itselleni ja asiakkailleni täysin kustomoituja verkkosivuja
@@ -58,17 +55,27 @@
             </div>
           </div>
           <div class="text-content">
-            <h3 class="text-l mt-l mb-m">Projektin kulku</h3>
-            <div class="project-step">
-              <h4>Ollaan yhteyksissä</h4>
+            <h3 class="text-xl mt-l mb-xl text-center">Projektin kulku</h3>
+            <div class="project-step" v-vpshow>
+              <v-icon
+                :iconName="'phone'"
+                :iconSize="'l'"
+                class="flex-container fja-center"
+              ></v-icon>
+              <h4 class="text-center">Ollaan yhteyksissä</h4>
               <p>
                 Ota minuun yhteyttä ja jutellaan minkälainen projekti sinulla
                 olisi mielessä. Katsotaan yhdessä toteutuksen kokonaisuus ja
                 arvioidaan kustannukset.
               </p>
             </div>
-            <div class="project-step">
-              <h4>Suunnittelu</h4>
+            <div class="project-step" v-vpshow>
+              <v-icon
+                :iconName="'planning'"
+                :iconSize="'l'"
+                class="flex-container fja-center"
+              ></v-icon>
+              <h4 class="text-center">Suunnittelu</h4>
               <p>
                 Hahmottelen ensivedoksen projektista Figmalla ja käydään se
                 yhdessä läpi. Katsotaan että kaikki tarvittavat elementit
@@ -76,31 +83,51 @@
               </p>
             </div>
 
-            <div class="project-step">
-              <h4>Toteutus</h4>
+            <div class="project-step" v-vpshow>
+              <v-icon
+                :iconName="'coding'"
+                :iconSize="'l'"
+                class="flex-container fja-center"
+              ></v-icon>
+              <h4 class="text-center">Toteutus</h4>
               <p>
                 Pistetään näppäimistö sauhuamaan! Toteutan ensimmäisen
                 käytettävän prototyypin (MVP) ja testataan toimivuus yhdessä.
               </p>
             </div>
-            <div class="project-step">
-              <h4>Viimeistely</h4>
+            <div class="project-step" v-vpshow>
+              <v-icon
+                :iconName="'review'"
+                :iconSize="'l'"
+                class="flex-container fja-center"
+              ></v-icon>
+              <h4 class="text-center">Viimeistely</h4>
               <p>
                 Hiotaan lopullinen ulkoasu ja sen yksityiskohdat paikalleen.
                 Tarkastan että ulkoasu ja käytettävyys ovat huippuluokkaa niin
                 mobiililaitteilla kuin pöytäkoneillakin.
               </p>
             </div>
-            <div class="project-step">
-              <h4>Julkaisu</h4>
+            <div class="project-step" v-vpshow>
+              <v-icon
+                :iconName="'launch'"
+                :iconSize="'l'"
+                class="flex-container fja-center"
+              ></v-icon>
+              <h4 class="text-center">Julkaisu</h4>
               <p>
                 Hankitaan viimeistään tässä vaiheessa sinulle palvelintila ja
                 verkkotunnus josta verkkosivusi löytyvät. Autan ja opastan
                 kaikissa vaiheissa.
               </p>
             </div>
-            <div class="project-step">
-              <h4>Ylläpito ja seuranta</h4>
+            <div class="project-step" v-vpshow>
+              <v-icon
+                :iconName="'followup'"
+                :iconSize="'l'"
+                class="flex-container fja-center"
+              ></v-icon>
+              <h4 class="text-center">Ylläpito ja seuranta</h4>
               <p>
                 Takaisinmaksun aika! Nyt verkkosivusi ovat koko maailman
                 löydettävissä ja pidetään huoli että ne myös löytyvät.
@@ -137,16 +164,18 @@ import HeroTitle from '@/components/HeroTitle'
 import ContactForm from '@/components/ContactForm'
 import Footer from '@/components/Footer'
 import ProfileCard from '@/components/ProfileCard'
+import Icon from '@/components/Icon'
 
 export default {
   metaInfo: {
-    title: 'Index',
+    title: 'Etusivu',
   },
   components: {
     'v-hero-title': HeroTitle,
     'v-contact-form': ContactForm,
     'v-footer': Footer,
     'v-profile-card': ProfileCard,
+    'v-icon': Icon,
   },
   data() {
     return {

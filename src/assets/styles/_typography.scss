@@ -16,13 +16,17 @@ a {
     text-decoration: none;
 }
 
+.text-l {
+    font-size: var(--text-24);
+}
+
+.text-xl {
+    font-size: var(--text-36);
+}
+
 .text-xxl {
     font-size: var(--text-60);
     line-height: 1;
-}
-
-.text-l {
-    font-size: var(--text-24);
 }
 
 .logo-text {
@@ -41,7 +45,9 @@ a {
     font-weight: 400;
 }
 
-
+.text-center {
+    text-align: center;
+}
 
 .text-normal {
     font-weight: 400;
