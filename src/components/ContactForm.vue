@@ -16,7 +16,7 @@
         <input
           type="text"
           placeholder=" "
-          name="contact-name"
+          name="name"
           id="contact-name"
           class="form-input input-text"
           v-model="formData.name"
@@ -29,7 +29,7 @@
         <div class="text-bold">Yhteydenottotapa</div>
         <input
           type="radio"
-          name="contact-both"
+          name="contactMethod"
           id="contact-both"
           value="both"
           class="form-input input-radio-option"
@@ -40,7 +40,7 @@
         </label>
         <input
           type="radio"
-          name="contact-phone"
+          name="contactMethod"
           id="contact-phone"
           value="phone"
           v-model="formData.contactMethod"
@@ -51,7 +51,7 @@
         </label>
         <input
           type="radio"
-          name="contact-email"
+          name="contactMethod"
           id="contact-email"
           value="email"
           v-model="formData.contactMethod"
@@ -137,14 +137,6 @@ export default {
   },
   methods: {
     encodeFormData(formData) {
-      console.log(
-        Object.keys(formData)
-          .map(
-            (key) =>
-              encodeURIComponent(key) + '=' + encodeURIComponent(formData[key])
-          )
-          .join('&')
-      )
       return Object.keys(formData)
         .map(
           (key) =>
@@ -153,8 +145,6 @@ export default {
         .join('&')
     },
     sendForm(event) {
-      console.log(event.target.getAttribute('name'))
-      console.log(this.formData)
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
