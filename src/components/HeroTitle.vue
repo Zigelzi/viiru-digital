@@ -1,7 +1,7 @@
 <template>
   <div class="hero-text-content">
     <h2 class="hero-text-s hero-text">
-      <transition name="fade" mode="out-in">
+      <transition name="fade-slow" mode="out-in">
         <span
           :key="currentHobby"
           class="text-normal text-capitalized hero-hobby"
@@ -30,13 +30,13 @@ export default {
         'kokkaaminen',
       ],
       intervalId: null,
-    };
+    }
   },
   methods: {
     rotateHobbies() {
-      let currentHobbyIndex = 0;
+      let currentHobbyIndex = 0
       this.intervalId = setInterval(() => {
-        const numberOfHobbies = this.hobbies.length;
+        const numberOfHobbies = this.hobbies.length
         this.currentHobby = this.hobbies[currentHobbyIndex]
         currentHobbyIndex += 1
         if (currentHobbyIndex >= numberOfHobbies) {
@@ -46,7 +46,7 @@ export default {
     },
   },
   mounted() {
-    this.rotateHobbies();
+    this.rotateHobbies()
   },
   beforeDestroy() {
     clearInterval(this.intervalId)
@@ -68,13 +68,13 @@ export default {
   min-width: 145px;
 }
 
-.fade-enter-active,
-.fade-leave.active {
+.fade-slow-enter-active,
+.fade-slow-leave.active {
   transition: opacity 1.2s ease;
 }
 
-.fade-enter,
-.fade-leave-to {
+.fade-slow-enter,
+.fade-slow-leave-to {
   opacity: 0;
 }
 </style>

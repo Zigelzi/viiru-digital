@@ -154,15 +154,12 @@
         </div>
       </section>
     </div>
-
-    <v-footer />
   </Layout>
 </template>
 
 <script>
 import HeroTitle from '@/components/HeroTitle'
 import ContactForm from '@/components/ContactForm'
-import Footer from '@/components/Footer'
 import ProfileCard from '@/components/ProfileCard'
 import Icon from '@/components/Icon'
 
@@ -173,7 +170,6 @@ export default {
   components: {
     'v-hero-title': HeroTitle,
     'v-contact-form': ContactForm,
-    'v-footer': Footer,
     'v-profile-card': ProfileCard,
     'v-icon': Icon,
   },
