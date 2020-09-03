@@ -2,15 +2,16 @@
   <div class="hero-text-content">
     <h2 class="hero-text-s hero-text">
       <transition name="fade-slow" mode="out-in">
-        <span
+        <div
           :key="currentHobby"
           class="text-normal text-capitalized hero-hobby"
-          >{{ currentHobby }}</span
         >
+          {{ currentHobby }}
+        </div>
       </transition>
-      on harrastukseni
+      <div>on harrastukseni</div>
     </h2>
-    <h1 class="hero-text-l hero-text">
+    <h1 class="hero-text-l hero-text mt-l">
       <span class="text-normal text-pink">Digitaaliset palvelut</span>
       intohimoni
     </h1>
@@ -54,13 +55,14 @@ export default {
 }
 </script>
 <style lang="scss">
-.hero-text {
+.hero-text-s {
+  font-size: var(--text-20);
   font-weight: 300;
-  font-family: var(--body-text);
+  font-family: var(--body-font);
 }
 
-.hero-text-s {
-  font-size: var(--text-18);
+.hero-text-l {
+  font-size: var(--text-48);
 }
 
 .hero-hobby {

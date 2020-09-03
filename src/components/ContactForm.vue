@@ -1,7 +1,17 @@
 <template>
   <div>
-    <h1>Ota yhteyttä</h1>
-    <p class="mb-l">Yhteinen projekti alkaa jättämällä yhteystietosi.</p>
+    <div class="mb-xl">
+      <h1>Toteutetaan ideasi!</h1>
+      <p>
+        Onko sinulla idea jonka haluaisit toteuttaa? Jutellaan siitä vaikka
+        kahvikupin äärellä.
+      </p>
+      <p>
+        Jätä yhteystietosi niin olen sinuun yhteydessä ja pistetään homma
+        käyntiin!
+      </p>
+    </div>
+
     <form
       name="contact-form"
       id="contact-form"
@@ -22,11 +32,11 @@
           v-model="formData.name"
         />
         <label for="contact-name" class="form-label text-input-label">
-          Nimi
+          Nimesi
         </label>
       </div>
       <div class="contact-method input-container">
-        <div class="text-bold">Yhteydenottotapa</div>
+        <div class="text-m">Mikä yhteydenottotapa sopii sinulle parhaiten?</div>
         <input
           type="radio"
           name="contactMethod"

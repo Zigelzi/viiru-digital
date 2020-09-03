@@ -34,8 +34,12 @@ body {
     z-index: 2;
 }
 
+.section {
+    padding: var(--p-section) 0;
+}
+
 .hero-text-content {
-    margin: 20vh var(--mg-xl) 0;   
+    margin: 15vh var(--mg-xl) 0;   
 }
 
 .text-content {
@@ -54,6 +58,7 @@ body {
     color: var(--gray-900);
     transition: all .3s;
     transform-origin: center;
+    text-transform: uppercase;
 
     &:hover {
         background: var(--primary-500);

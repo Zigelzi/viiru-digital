@@ -91,6 +91,11 @@
     padding-bottom: var(--p-xl);
 }
 
+.pv-xxl {
+    padding-top: var(--p-xxl);
+    padding-bottom: var(--p-xxl);
+}
+
 .ph-xs {
     padding-left: var(--p-xs);
     padding-right: var(--p-xs);
@@ -117,6 +122,10 @@
 }
 
 // Top
+.pt-0 {
+    padding-top: 0;
+}
+
 .pt-xs {
     padding-top: var(--mg-xs);
 }

@@ -15,44 +15,49 @@
       </div>
     </section>
     <div class="">
-      <section id="introduction">
-        <div class="text-content pv-xl" v-vpshow>
-          <h1 class="text-xxl text-center">Moi!</h1>
-          <p>
-            Olen Miika Savela, digitaalisten tuotteiden ja tekniikan kanssa
-            peuhaamista rakastava kaveri Lohjalta.
-          </p>
-          <p>
-            <span class="text-pink">Viiru Digital</span> on yksi projekteistani,
-            jonka puitteissa kehitän osaamistani verkkosivujen ja digitaalisten
-            tuotteiden suunnittelun toteuttamisen parissa.
-          </p>
-          <p>
-            Teen itselleni ja asiakkailleni täysin kustomoituja verkkosivuja
-            käyttäen nykyaikaisia teknologioita.
-          </p>
-          <p>
-            Päivätöikseni toimin
-            <span class="text-bold">Product Ownerina</span> huippuluokan
-            rekrytointiohjelmistoa toimittavassa yrityksessa nimeltä
-            <a class="text-jobilla" href="https://jobilla.com/">Jobilla</a>
-          </p>
-          <!-- <v-profile-card /> -->
+      <section id="introduction" class="section pt-0">
+        <div class="text-content pt-xxl">
+          <h1 class="text-xl mb-l">
+            Kaverisi joka auttaa tuomaan tuotteesi ja ideasi käytäntöön
+          </h1>
+          <div class="text-m text-light">
+            <p>
+              Päätähuimaavien ideoiden ja tuotteiden ei kuulu jäädä vain
+              ajatuksisi pääsi sisällä.
+            </p>
+            <p>
+              Voin auttaa sinua digitaalisen tuotteen määrittelyssä,
+              suunnittelussa ja ensimmäisen version rakentamisessa.
+            </p>
+            <p>
+              Jos tarvitset vain ideaa tai yritystäsi varten tyylikkäät ja
+              helppokäyttöiset verkkosivut, se onnistuu myös!
+            </p>
+          </div>
+
+          <a href="#contact-me" class="btn text-uppercase text-l"
+            >Toteutetaan ideasi</a
+          >
         </div>
       </section>
-      <section id="website-project">
-        <div class="pv-xl bg-white">
+      <section id="website-project" class="section bg-white">
+        <div class="">
           <div class="text-content">
-            <h1 class="text-l">Haluatko verkkosivut?</h1>
+            <h1 class="text-l">Puuttuvatko verkkosivut?</h1>
             <p>
-              Toteutan sivutoimisesti verkkosivuja ja voin auttaa digitaalisten
-              palveluiden prototyyppaamisessa. Henkilökohtainen oppimisen
-              ollessa yksi osa palkastani, pystyn toteutaamaan projektisi kohtuu
-              kustannuksin.
+              Jos sinulta puuttuvat verkkosivut joita asiakkaasi haluavat
+              käyttää ja joilta he löytävät tarvitsemansa helposti, olet
+              oikeassa paikassa.
             </p>
-            <div class="pt-m pb-xl">
-              <a href="#contact-me" class="btn">Aloitetaan projekti yhdessä!</a>
-            </div>
+            <p>
+              Haluan mahdollistaa pienellekkin yritykselle kotisivut joita on
+              kiva käyttää. Työskennellessäsi kanssani voit unohtaa valmiit
+              sivupohjat ja sivustogeneraattorit.
+            </p>
+            <p>
+              Käydään yhdessä läpi minkälainen yritys tai idea sinulla on ja
+              toteutetaan sille mahta
+            </p>
           </div>
           <div class="text-content">
             <h3 class="text-xl mt-l mb-xl text-center">Projektin kulku</h3>
@@ -138,7 +143,7 @@
           </div>
         </div>
       </section>
-      <section id="contact-me">
+      <section id="contact-me" class="section">
         <div class="text-content pv-xl">
           <transition name="fade">
             <div v-if="formVisible">

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: var(--body-font);
+    font-family: var(--heading-font);
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.2;
     font-weight: 400;
 }
 
@@ -16,8 +16,12 @@ a {
     text-decoration: none;
 }
 
+.text-m {
+    font-size: var(--text-18);
+}
+
 .text-l {
-    font-size: var(--text-24);
+    font-size: var(--text-20);
 }
 
 .text-xl {
@@ -49,6 +53,10 @@ a {
     text-align: center;
 }
 
+.text-light {
+    font-weight: 300;
+}
+
 .text-normal {
     font-weight: 400;
 }
@@ -59,6 +67,10 @@ a {
 
 .text-capitalized {
     text-transform: capitalize;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
 
 .text-pink {
