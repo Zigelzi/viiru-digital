@@ -1,6 +1,17 @@
 <template>
   <div class="">
-    <header><v-nav /></header>
+    <header>
+      <div class="logo-container">
+        <g-link to="/">
+          <img
+            class="logo-m logo-bg-clip"
+            src="/viiru_logo_band_head_opt.svg"
+            alt="Logo of Viiru Digital"
+          />
+        </g-link>
+      </div>
+      <v-nav />
+    </header>
     <slot />
     <v-footer />
   </div>

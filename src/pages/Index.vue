@@ -3,13 +3,6 @@
     <section id="hero-section">
       <div class="hero-container">
         <div class="hero-content">
-          <div class="logo-container">
-            <img
-              class="logo-m logo-bg-clip"
-              src="/viiru_logo_band_head_opt.svg"
-              alt="Logo of Viiru Digital"
-            />
-          </div>
           <v-hero-title />
         </div>
       </div>
@@ -20,7 +13,7 @@
           <h1 class="text-xl mb-l">
             Kaverisi joka auttaa tuomaan tuotteesi ja ideasi käytäntöön
           </h1>
-          <div class="text-m text-light">
+          <div class="text-m text-light pb-l">
             <p>
               Päätähuimaavien ideoiden ja tuotteiden ei kuulu jäädä vain
               ajatuksisi pääsi sisällä.
@@ -30,8 +23,8 @@
               suunnittelussa ja ensimmäisen version rakentamisessa.
             </p>
             <p>
-              Jos tarvitset vain ideaa tai yritystäsi varten tyylikkäät ja
-              helppokäyttöiset verkkosivut, se onnistuu myös!
+              Jos tarvitset vain tyylikkäät ja helppokäyttöiset verkkosivut
+              ideaasi tai yritystäsi varten, se onnistuu myös!
             </p>
           </div>
 
@@ -43,24 +36,66 @@
       <section id="website-project" class="section bg-white">
         <div class="">
           <div class="text-content">
-            <h1 class="text-l">Puuttuvatko verkkosivut?</h1>
-            <p>
-              Jos sinulta puuttuvat verkkosivut joita asiakkaasi haluavat
-              käyttää ja joilta he löytävät tarvitsemansa helposti, olet
-              oikeassa paikassa.
-            </p>
-            <p>
-              Haluan mahdollistaa pienellekkin yritykselle kotisivut joita on
-              kiva käyttää. Työskennellessäsi kanssani voit unohtaa valmiit
-              sivupohjat ja sivustogeneraattorit.
-            </p>
-            <p>
-              Käydään yhdessä läpi minkälainen yritys tai idea sinulla on ja
-              toteutetaan sille mahta
-            </p>
+            <div class="pb-l">
+              <h1>Onko sinulla jokin alla olevista ongelmista?</h1>
+            </div>
+            <div class="scroller-container">
+              <div class="scroller-item">
+                <g-image
+                  src="~/assets/img/campfire.jpg"
+                  class="image"
+                  alt="Picture of campfire"
+                />
+                <h1 class="text-xl scroller-heading">
+                  <span class="text-pink">Verkkosivut</span> <br />
+                  puuttuvat
+                </h1>
+              </div>
+              <div class="scroller-item">
+                <g-image
+                  src="~/assets/img/hay.jpg"
+                  class="image"
+                  alt="Picture of hay stick held by person"
+                />
+                <h1 class="text-xl scroller-heading">
+                  <span class="text-pink">Ideani</span> <br />
+                  kaipaa hiomista
+                </h1>
+              </div>
+              <div class="scroller-item">
+                <g-image
+                  src="~/assets/img/cog.jpg"
+                  class="image"
+                  alt="Picture of cogs"
+                />
+                <h1 class="text-xl scroller-heading">
+                  <span class="text-pink">Silpputyö</span> <br />
+                  vie liikaa aikaa
+                </h1>
+              </div>
+            </div>
+            <div class="pv-m">
+              <p>
+                Jos sinulta puuttuvat verkkosivut, haluat lähteä viemään ideaasi
+                käytäntöön tai automatisoida työtehtäviä jotka toistuvat
+                jatkuvasti, olet oikeassa paikassa.
+              </p>
+              <p>
+                Haluan auttaa pieniäkin yrityksiä ottamaan digitaaliset palvelut
+                haltuunsa ja valjastaa ne palvelemaan menestymistäsi.
+              </p>
+              <p>
+                Ole yhteydessä ja tutustutaan kahvikupin tai videopuhelun
+                äärellä. Jutellaan minkälaisia haasteita lähdetään yhdessä
+                ratkomaan ja sen perusteella viedään asiaa eteenpäin!
+              </p>
+              <p></p>
+            </div>
           </div>
           <div class="text-content">
-            <h3 class="text-xl mt-l mb-xl text-center">Projektin kulku</h3>
+            <h3 class="text-xl mt-l mb-xl text-center">
+              Verkkosivujen toteutus
+            </h3>
             <div class="project-step" v-vpshow>
               <v-icon
                 :iconName="'phone'"
