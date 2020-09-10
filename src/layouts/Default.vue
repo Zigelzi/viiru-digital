@@ -1,17 +1,8 @@
 <template>
   <div class="">
-    <header>
-      <div class="logo-container">
-        <g-link to="/">
-          <img
-            class="logo-m logo-bg-clip"
-            src="/viiru_logo_band_head_opt.svg"
-            alt="Logo of Viiru Digital"
-          />
-        </g-link>
-      </div>
+    <v-header>
       <v-nav />
-    </header>
+    </v-header>
     <slot />
     <v-footer />
   </div>
@@ -26,10 +17,6 @@ query {
 </static-query>
 
 <style>
-.test {
-  position: relative;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -38,11 +25,13 @@ query {
 </style>
 <script>
 import Nav from '@/components/Nav'
+import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
 export default {
   components: {
     'v-nav': Nav,
+    'v-header': Header,
     'v-footer': Footer,
   },
 }

@@ -39,7 +39,7 @@ body {
 }
 
 .hero-text-content {
-    margin: 15vh var(--mg-xl) 0;   
+    margin: 30vh var(--mg-xl) 0;   
 }
 
 .text-content {
@@ -121,22 +121,5 @@ body {
 }
 
 .image {
-    max-width: 100%;
     border-radius: 5px;
-}
-
-.scroller-container {
-    
-    
-}
-.scroller-item {
-    padding-bottom: var(--p-xl);
-    margin-bottom: var(--mg-l);
-    position: relative;
-}
-
-.scroller-heading {
-    position: absolute;
-    bottom: 0;
-    left: var(--p-s);
 }

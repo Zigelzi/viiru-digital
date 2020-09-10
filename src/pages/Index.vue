@@ -39,46 +39,11 @@
             <div class="pb-l">
               <h1>Onko sinulla jokin alla olevista ongelmista?</h1>
             </div>
-            <div class="scroller-container">
-              <div class="scroller-item">
-                <g-image
-                  src="~/assets/img/campfire.jpg"
-                  class="image"
-                  alt="Picture of campfire"
-                />
-                <h1 class="text-xl scroller-heading">
-                  <span class="text-pink">Verkkosivut</span> <br />
-                  puuttuvat
-                </h1>
-              </div>
-              <div class="scroller-item">
-                <g-image
-                  src="~/assets/img/hay.jpg"
-                  class="image"
-                  alt="Picture of hay stick held by person"
-                />
-                <h1 class="text-xl scroller-heading">
-                  <span class="text-pink">Ideani</span> <br />
-                  kaipaa hiomista
-                </h1>
-              </div>
-              <div class="scroller-item">
-                <g-image
-                  src="~/assets/img/cog.jpg"
-                  class="image"
-                  alt="Picture of cogs"
-                />
-                <h1 class="text-xl scroller-heading">
-                  <span class="text-pink">Silpputyö</span> <br />
-                  vie liikaa aikaa
-                </h1>
-              </div>
-            </div>
+            <v-scroller />
             <div class="pv-m">
               <p>
-                Jos sinulta puuttuvat verkkosivut, haluat lähteä viemään ideaasi
-                käytäntöön tai automatisoida työtehtäviä jotka toistuvat
-                jatkuvasti, olet oikeassa paikassa.
+                Jos sinulta puuttuvat verkkosivut tai haluat lähteä viemään
+                ideaasi käytäntöön, olet oikeassa paikassa.
               </p>
               <p>
                 Haluan auttaa pieniäkin yrityksiä ottamaan digitaaliset palvelut
@@ -87,15 +52,13 @@
               <p>
                 Ole yhteydessä ja tutustutaan kahvikupin tai videopuhelun
                 äärellä. Jutellaan minkälaisia haasteita lähdetään yhdessä
-                ratkomaan ja sen perusteella viedään asiaa eteenpäin!
+                ratkomaan!
               </p>
               <p></p>
             </div>
           </div>
           <div class="text-content">
-            <h3 class="text-xl mt-l mb-xl text-center">
-              Verkkosivujen toteutus
-            </h3>
+            <h3 class="text-xl mt-l mb-xl">Verkkosivujen toteutus</h3>
             <div class="project-step" v-vpshow>
               <v-icon
                 :iconName="'phone'"
@@ -200,7 +163,7 @@
 <script>
 import HeroTitle from '@/components/HeroTitle'
 import ContactForm from '@/components/ContactForm'
-import ProfileCard from '@/components/ProfileCard'
+import Scroller from '@/components/Scroller'
 import Icon from '@/components/Icon'
 
 export default {
@@ -210,8 +173,8 @@ export default {
   components: {
     'v-hero-title': HeroTitle,
     'v-contact-form': ContactForm,
-    'v-profile-card': ProfileCard,
     'v-icon': Icon,
+    'v-scroller': Scroller,
   },
   data() {
     return {
