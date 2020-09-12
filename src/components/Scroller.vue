@@ -7,7 +7,6 @@
             src="~/assets/img/campfire.jpg"
             class="image scroller-image"
             alt="Picture of campfire"
-            width="500px"
           />
         </div>
         <h1 class="text-xl scroller-heading">
@@ -21,7 +20,6 @@
             src="~/assets/img/hay.jpg"
             class="image scroller-image"
             alt="Picture of hay stick held by person"
-            width="500px"
           />
         </div>
         <h1 class="text-xl scroller-heading">
@@ -36,33 +34,38 @@
 .scroll-rails {
   overflow: scroll;
   display: flex;
-  height: 60vh;
+  height: 95vw;
   justify-content: flex-start;
-  margin-right: -5%; // Counter the text-content margin
+  margin-left: -5%; // Counter the text-content margin
+  width: 110%; // Expand the container to full screen width
 }
 
 .scroller-item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 80vw;
   flex-shrink: 0;
   flex-grow: 0;
   flex-basis: auto;
-  margin-right: var(--p-l);
+  margin-right: var(--mg-l);
+
+  &:first-child {
+    padding-left: 5%;
+  }
 
   &:last-child {
-    margin-right: 0;
+    padding-right: 5%;
   }
 }
 
 .scroller-heading {
-  position: absolute;
-  bottom: 4.5vh;
-  left: var(--p-s);
+  margin-top: calc(var(--text-36) * -1.2 - 4px); // Height of the text - 4px
+  margin-left: var(--mg-s);
 }
 
 .scroller-img-container {
   width: 100%;
-  height: 50vh;
 }
 
 .scroller-image {

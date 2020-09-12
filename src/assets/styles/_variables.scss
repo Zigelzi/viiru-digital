@@ -63,3 +63,11 @@
 
     --content-width: 660px;
 }
+
+// SCSS Variables where CSS native variables can't be used.
+
+// Breakpoints
+$bp-tablet: 480px;
+$bp-desktop-s: 768px;
+$bp-desktop-m: 1024px;
+$bp-desktop-l: 1200px;
