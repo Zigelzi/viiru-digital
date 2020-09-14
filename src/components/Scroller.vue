@@ -34,7 +34,7 @@
 .scroll-rails {
   overflow: scroll;
   display: flex;
-  height: 95vw;
+  height: 100vw;
   justify-content: flex-start;
   margin-left: -5%; // Counter the text-content margin
   width: 110%; // Expand the container to full screen width
@@ -45,6 +45,7 @@
   display: flex;
   flex-direction: column;
   width: 80vw;
+  min-width: 325px;
   flex-shrink: 0;
   flex-grow: 0;
   flex-basis: auto;

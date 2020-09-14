@@ -15,7 +15,6 @@ export default {
   },
   methods: {
     test() {
-      console.log(`navOpen is ${this.navOpen}`)
       this.$emit('menuIconClicked')
     },
   },

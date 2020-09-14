@@ -1,3 +1,27 @@
+// Flexbox and grid
+.flex-container {
+    display:flex;
+}
+
+.fja-center {
+    // Justify and Align
+    justify-content: center;
+    align-content: center;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.f-grow {
+    flex-grow: 1;
+}
+
+.fb-50 {
+    flex-basis: 50%;
+}
+
+
 .mv-xs {
     margin-top: var(--mg-xs);
     margin-bottom: var(--mg-xs);
@@ -63,6 +87,27 @@
 
 .mb-xl {
     margin-bottom: var(--mg-xl);
+}
+
+// Right
+.mr-xs {
+    margin-right: var(--mg-xs);
+}
+
+.mr-s {
+    margin-right: var(--mg-s);
+}
+
+.mr-m {
+    margin-right: var(--mg-m);
+}
+
+.mr-l {
+    margin-right: var(--mg-l);
+}
+
+.mr-xl {
+    margin-right: var(--mg-xl);
 }
 
 // Paddings
