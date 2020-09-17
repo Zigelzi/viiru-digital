@@ -36,10 +36,6 @@
       <section id="website-project" class="section bg-white">
         <div class="">
           <div class="text-content">
-            <div class="pb-l">
-              <h1>Onko sinulla jokin alla olevista ongelmista?</h1>
-            </div>
-            <v-scroller />
             <div class="pv-m">
               <p>
                 Jos sinulta puuttuvat verkkosivut tai haluat lähteä viemään
