@@ -5,7 +5,7 @@
         <div>
           <g-link @click.native="toggleNav" to="/" class="nav-logo">
             <img
-              class="logo-m pv-l ph-s"
+              class="logo-m logo-nav"
               src="/viiru_logo_band_head_opt.svg"
               alt="Logo of Viiru Digital"
             />
@@ -15,7 +15,7 @@
         <div class="flex-container fja-center">
           <div class="nav-links flex-container">
             <g-link @click.native="toggleNav" class="nav-item" to="/about/"
-              >Esittely</g-link
+              >Minusta</g-link
             >
           </div>
         </div>

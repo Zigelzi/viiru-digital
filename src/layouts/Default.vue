@@ -3,7 +3,10 @@
     <v-header>
       <v-nav />
     </v-header>
-    <slot />
+    <div class="">
+      <slot />
+    </div>
+
     <v-footer />
   </div>
 </template>

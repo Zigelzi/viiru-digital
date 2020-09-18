@@ -8,8 +8,8 @@
       </div>
     </section>
     <div class="">
-      <section id="introduction" class="section pt-0">
-        <div class="text-content pt-xxl">
+      <section id="introduction" class="pt-0">
+        <div class="pt-xxl container">
           <h1 class="text-xl mb-l">
             Kaverisi joka auttaa tuomaan tuotteesi ja ideasi käytäntöön
           </h1>
@@ -28,14 +28,14 @@
             </p>
           </div>
 
-          <a href="#contact-me" class="btn text-uppercase text-l"
+          <a href="#contact-me" class="btn btn-outline text-uppercase text-l"
             >Toteutetaan ideasi</a
           >
         </div>
       </section>
-      <section id="website-project" class="section bg-white">
-        <div class="">
-          <div class="text-content">
+      <section id="website-project" class="bg-white">
+        <div class="container">
+          <div class="">
             <div class="pv-m">
               <p>
                 Jos sinulta puuttuvat verkkosivut tai haluat lähteä viemään
@@ -53,7 +53,7 @@
               <p></p>
             </div>
           </div>
-          <div class="text-content">
+          <div class="">
             <h3 class="text-xl mt-l mb-xl">Verkkosivujen toteutus</h3>
             <div class="project-step" v-vpshow>
               <v-icon
@@ -137,15 +137,15 @@
           </div>
         </div>
       </section>
-      <section id="contact-me" class="section">
-        <div class="text-content pv-xl">
+      <section id="contact-me" class="">
+        <div class="pv-xl container">
           <transition name="fade">
             <div v-if="formVisible">
               <v-contact-form @formSubmitted="updateFormVisibility" />
             </div>
             <div v-else>
               <p>{{ successMessage }}</p>
-              <button class="btn" @click="resetFormVisibility">
+              <button class="btn btn-solid" @click="resetFormVisibility">
                 Uusi yhteydenottopyyntö
               </button>
             </div>

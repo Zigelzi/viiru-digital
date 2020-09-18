@@ -4,11 +4,7 @@
       <h1>Toteutetaan ideasi!</h1>
       <p>
         Onko sinulla idea jonka haluaisit toteuttaa? Jutellaan siitä vaikka
-        kahvikupin äärellä.
-      </p>
-      <p>
-        Jätä yhteystietosi niin olen sinuun yhteydessä ja pistetään homma
-        käyntiin!
+        kahvikupin äärellä. Olen sinuun yhteydessä kahden päivän sisällä.
       </p>
     </div>
 
@@ -36,7 +32,7 @@
         </label>
       </div>
       <div class="contact-method input-container">
-        <div class="text-m">Mikä yhteydenottotapa sopii sinulle parhaiten?</div>
+        <div class="text-m">Haluan yhteydenoton</div>
         <input
           type="radio"
           name="contactMethod"
@@ -46,7 +42,7 @@
           v-model="formData.contactMethod"
         />
         <label for="contact-both" class="form-label input-radio-label">
-          Puhelin ja sähköposti
+          Puhelimella tai sähköpostilla
         </label>
         <input
           type="radio"
@@ -57,7 +53,7 @@
           class="form-input input-radio-option"
         />
         <label for="contact-phone" class="form-label input-radio-label">
-          Puhelin
+          Puhelimella
         </label>
         <input
           type="radio"
@@ -68,7 +64,7 @@
           class="form-input input-radio-option"
         />
         <label for="contact-email" class="form-label input-radio-label">
-          Sähköposti
+          Sähköpostilla
         </label>
       </div>
       <div id="contact-information">
@@ -127,7 +123,7 @@
           Lisätietoja
         </label>
       </div>
-      <input type="submit" class="btn" value="Ota yhteyttä" />
+      <input type="submit" class="btn btn-solid" value="Ota yhteyttä" />
     </form>
   </div>
 </template>
@@ -211,9 +207,9 @@ export default {
   padding: var(--p-s);
   width: 100%;
   border: none;
-  box-shadow: 0px 0px 0px 2px white;
+  box-shadow: 0px 0px 0px 2px var(--primary-400);
   transition: box-shadow 0.2s;
-  background: var(--gray-600);
+  background: var(--gray-800);
   color: var(--white);
 
   &:focus {
@@ -242,9 +238,10 @@ export default {
   display: block;
   padding: var(--p-m);
   margin: var(--mg-m) 0;
-  background: var(--gray-400);
+  background: var(--gray-800);
   text-align: center;
-  color: var(--black);
+  color: var(--white);
+  // border: 2px var(--primary-400) solid;
   transition: all 0.2s ease-in-out;
 }
 
@@ -260,7 +257,7 @@ export default {
 
   &:checked + .input-radio-label {
     background: var(--primary-700);
-    color: var(--gray-300);
+    color: var(--gray-100);
   }
 
   &:active + .input-radio-label {

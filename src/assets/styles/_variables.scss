@@ -51,7 +51,10 @@
     --p-l: 25px;
     --p-xl: 35px;
     --p-xxl: 55px;
-    --p-section: 100px;
+    --p-section-vt: 15px;
+    --p-section-vb: 100px;
+    --p-section-h-s: 24px;
+    --p-section-h-l: 80px; 
 
     // Margins
     --mg-xs: 5px;
@@ -63,6 +66,7 @@
 
     --content-width: 660px;
     --nav-height: 110px;
+    --footer-height: 150px;
 }
 
 // SCSS Variables where CSS native variables can't be used.
