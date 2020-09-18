@@ -159,7 +159,6 @@
 <script>
 import HeroTitle from '@/components/HeroTitle'
 import ContactForm from '@/components/ContactForm'
-import Scroller from '@/components/Scroller'
 import Icon from '@/components/Icon'
 
 export default {
@@ -170,7 +169,6 @@ export default {
     'v-hero-title': HeroTitle,
     'v-contact-form': ContactForm,
     'v-icon': Icon,
-    'v-scroller': Scroller,
   },
   data() {
     return {
