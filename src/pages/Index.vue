@@ -11,20 +11,20 @@
       <section id="introduction" class="pt-0">
         <div class="pt-xxl container">
           <h1 class="text-xl mb-l">
-            Kaverisi joka auttaa tuomaan tuotteesi ja ideasi käytäntöön
+            Verkkosivut ja tuotteet ideasta käytäntöön
           </h1>
-          <div class="text-m text-light pb-l">
+          <div class="pb-l">
             <p>
               Päätähuimaavien ideoiden ja tuotteiden ei kuulu jäädä vain
-              ajatuksisi pääsi sisällä.
+              päähäsi.
             </p>
             <p>
-              Voin auttaa sinua digitaalisen tuotteen määrittelyssä,
+              Toteutan sinulle verkkosivut, jotka parantavat tunnettuvuuttasi ja
+              luotettavuuttasi verkossa.
+            </p>
+            <p>
+              Voin myös auttaa sinua digitaalisen tuotteen määrittelyssä,
               suunnittelussa ja ensimmäisen version rakentamisessa.
-            </p>
-            <p>
-              Jos tarvitset vain tyylikkäät ja helppokäyttöiset verkkosivut
-              ideaasi tai yritystäsi varten, se onnistuu myös!
             </p>
           </div>
 
@@ -33,24 +33,27 @@
           >
         </div>
       </section>
-      <section id="website-project" class="bg-white">
+      <section id="products" class="bg-white">
         <div class="container">
           <div class="">
             <div class="pv-m">
+              <h1>Verkkosivut</h1>
               <p>
-                Jos sinulta puuttuvat verkkosivut tai haluat lähteä viemään
-                ideaasi käytäntöön, olet oikeassa paikassa.
+                Hyvin toimivat ja helposti käytettävät verkkosivut ovat
+                nykypäivänä perusoletus, eivät poikkeus.
               </p>
+              <g-link class="content-link" to="/tuotteet/"
+                >Tehdään sinulle sellaiset</g-link
+              >
+            </div>
+            <div class="pv-m">
+              <h1>Tuotekonsultointi</h1>
               <p>
-                Haluan auttaa pieniäkin yrityksiä ottamaan digitaaliset palvelut
-                haltuunsa ja valjastaa ne palvelemaan menestymistäsi.
+                Ennakoi hidasteet ja nopeuta ideasi tuomista käytäntöön.
+                Käytössäsi on yli 15 000 tuntia tuoteosaamisen kokemusta,
+                designistä julkaisuun.
               </p>
-              <p>
-                Ole yhteydessä ja tutustutaan kahvikupin tai videopuhelun
-                äärellä. Jutellaan minkälaisia haasteita lähdetään yhdessä
-                ratkomaan!
-              </p>
-              <p></p>
+              <g-link class="content-link" to="/tuotteet/">Lue lisää...</g-link>
             </div>
           </div>
           <div class="">

@@ -14,7 +14,7 @@
 
         <div class="flex-container fja-center">
           <div class="nav-links flex-container">
-            <g-link @click.native="toggleNav" class="nav-item" to="/about/"
+            <g-link @click.native="toggleNav" class="nav-item" to="/minusta/"
               >Minusta</g-link
             >
           </div>

@@ -18,6 +18,35 @@ html {
     border-top: 15px solid var(--white);
 }
 
+a {
+    color: var(--primary-600);
+    position: relative;
+}
+
+.content-link {
+    &::after {
+        // Create the underline
+        content: "";
+        position: absolute;
+        background-color: var(--primary-400);
+        bottom: -4px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        transition: height .15s ease;
+    }
+
+    &:hover {
+        &::after {
+            height: 4px;
+        }
+    }
+
+    &:visited {
+        color: var(--primary-700);
+    }
+}
+
 .hero-container {
     height: 100vh;
     display: flex;
