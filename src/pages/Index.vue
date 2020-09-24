@@ -36,110 +36,75 @@
       <section id="products" class="bg-white">
         <div class="container">
           <div class="">
-            <div class="pv-m">
-              <h1>Verkkosivut</h1>
-              <p>
-                Hyvin toimivat ja helposti käytettävät verkkosivut ovat
-                nykypäivänä perusoletus, eivät poikkeus.
-              </p>
-              <g-link class="content-link" to="/tuotteet/"
-                >Tehdään sinulle sellaiset</g-link
-              >
+            <div class="pv-m product-tile">
+              <div class="img-container">
+                <g-image
+                  src="@/assets/img/phone_google.jpg"
+                  alt="Closeup picture of keyboard"
+                  class="image"
+                />
+              </div>
+              <div class="product-tile-content">
+                <h2>Verkkosivut</h2>
+                <p>
+                  Paranna yrityksesi tunnettavuutta ja löydettävyyttä nopeasti
+                  toimivilla ja helposti löydettävillä verkkosivuilla.
+                </p>
+                <g-link class="btn btn-solid" to="/tuotteet/"
+                  >Hanki verkkosivut</g-link
+                >
+              </div>
             </div>
-            <div class="pv-m">
-              <h1>Tuotekonsultointi</h1>
-              <p>
-                Ennakoi hidasteet ja nopeuta ideasi tuomista käytäntöön.
-                Käytössäsi on yli 15 000 tuntia tuoteosaamisen kokemusta,
-                designistä julkaisuun.
-              </p>
-              <g-link class="content-link" to="/tuotteet/">Lue lisää...</g-link>
-            </div>
-          </div>
-          <div class="">
-            <h3 class="text-xl mt-l mb-xl">Verkkosivujen toteutus</h3>
-            <div class="project-step" v-vpshow>
-              <v-icon
-                :iconName="'phone'"
-                :iconSize="'l'"
-                class="flex-container fja-center"
-              ></v-icon>
-              <h4 class="text-center">Ollaan yhteyksissä</h4>
-              <p>
-                Ota minuun yhteyttä ja jutellaan minkälainen projekti sinulla
-                olisi mielessä. Katsotaan yhdessä toteutuksen kokonaisuus ja
-                arvioidaan kustannukset.
-              </p>
-            </div>
-            <div class="project-step" v-vpshow>
-              <v-icon
-                :iconName="'planning'"
-                :iconSize="'l'"
-                class="flex-container fja-center"
-              ></v-icon>
-              <h4 class="text-center">Suunnittelu</h4>
-              <p>
-                Hahmottelen ensivedoksen projektista Figmalla ja käydään se
-                yhdessä läpi. Katsotaan että kaikki tarvittavat elementit
-                löytyvät ja että sivun asettelu on haluamasi mukainen.
-              </p>
-            </div>
-
-            <div class="project-step" v-vpshow>
-              <v-icon
-                :iconName="'coding'"
-                :iconSize="'l'"
-                class="flex-container fja-center"
-              ></v-icon>
-              <h4 class="text-center">Toteutus</h4>
-              <p>
-                Pistetään näppäimistö sauhuamaan! Toteutan ensimmäisen
-                käytettävän prototyypin (MVP) ja testataan toimivuus yhdessä.
-              </p>
-            </div>
-            <div class="project-step" v-vpshow>
-              <v-icon
-                :iconName="'review'"
-                :iconSize="'l'"
-                class="flex-container fja-center"
-              ></v-icon>
-              <h4 class="text-center">Viimeistely</h4>
-              <p>
-                Hiotaan lopullinen ulkoasu ja sen yksityiskohdat paikalleen.
-                Tarkastan että ulkoasu ja käytettävyys ovat huippuluokkaa niin
-                mobiililaitteilla kuin pöytäkoneillakin.
-              </p>
-            </div>
-            <div class="project-step" v-vpshow>
-              <v-icon
-                :iconName="'launch'"
-                :iconSize="'l'"
-                class="flex-container fja-center"
-              ></v-icon>
-              <h4 class="text-center">Julkaisu</h4>
-              <p>
-                Hankitaan viimeistään tässä vaiheessa sinulle palvelintila ja
-                verkkotunnus josta verkkosivusi löytyvät. Autan ja opastan
-                kaikissa vaiheissa.
-              </p>
-            </div>
-            <div class="project-step" v-vpshow>
-              <v-icon
-                :iconName="'followup'"
-                :iconSize="'l'"
-                class="flex-container fja-center"
-              ></v-icon>
-              <h4 class="text-center">Ylläpito ja seuranta</h4>
-              <p>
-                Takaisinmaksun aika! Nyt verkkosivusi ovat koko maailman
-                löydettävissä ja pidetään huoli että ne myös löytyvät.
-                Halutessasi voimme lisätä projektiin analytiikkaa jonka avulla
-                toimintaa ja sisältöä voidaan kehittää.
-              </p>
+            <div class="pv-m product-tile">
+              <div class="img-container">
+                <g-image
+                  src="@/assets/img/computer_keyboard.jpg"
+                  alt="Closeup picture of keyboard"
+                  class="image"
+                />
+              </div>
+              <div class="product-tile-content">
+                <h2 class="product-tile-text">Tuotekonsultointi</h2>
+                <p class="product-tile-text">
+                  Hyödynnä yli 15 000 tunnin osaaminen digitaalisten palveluiden
+                  kehittämisen parissa, designista julkaisuun.
+                </p>
+                <g-link class="btn btn-solid" to="/tuotteet/"
+                  >Hyödynnä osaaminen</g-link
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="bg-white">
+        <div class="container">
+          <h2 class="mb-l">Kenen kanssa työskentelet?</h2>
+          <div class="image-container">
+            <g-image
+              src="@/assets/img/miika_profile_picture.jpg"
+              alt="Picture of Miika Savela"
+              class="image"
+            />
+          </div>
+          <h3 class="mt-l">Moi!</h3>
+          <p>
+            Olen Miika Savela, kaveri
+            <span class="text-pink">Viiru Digitalin</span> takana. Olen
+            harrastanut ja työskennellyt tietotekniikan kanssa lähes koko ikäni.
+          </p>
+          <p>
+            Haluan auttaa sinua hyödyntämään digitaalisia palveluita yrityksesi
+            kasvun tukemiseksi. Voit keskittyä siihen mitä osaat parhaiten ja
+            pyytää apua kun törmäät ongelmiin nykyajan palveluissa tai kun
+            tunnet ettet tiedä mistä aloittaa.
+          </p>
+          <g-link class="btn btn-solid" to="/minusta"
+            >Tutustu osaamiseen</g-link
+          >
+        </div>
+      </section>
+
       <section id="contact-me" class="">
         <div class="pv-xl container">
           <transition name="fade">

@@ -19,31 +19,15 @@ html {
 }
 
 a {
-    color: var(--primary-600);
+    color: var(--primary-400);
     position: relative;
 }
 
 .content-link {
-    &::after {
-        // Create the underline
-        content: "";
-        position: absolute;
-        background-color: var(--primary-400);
-        bottom: -4px;
-        left: 0;
-        height: 2px;
-        width: 100%;
-        transition: height .15s ease;
-    }
-
-    &:hover {
-        &::after {
-            height: 4px;
-        }
-    }
+    color: var(--primary-700);
 
     &:visited {
-        color: var(--primary-700);
+        // color: var(--primary-700);
     }
 }
 
@@ -137,6 +121,10 @@ a {
     color: var(--black);
 }
 
+.bg-black {
+    background: var(--black);
+}
+
 .logo-m {
     height: 90px;
     padding: var(--p-s) var(--p-xl) var(--p-s) var(--p-s);
@@ -146,8 +134,7 @@ a {
     margin-top: 15px; // Match border height in top image
 }
 
-.logo-bg-clip {
-    background: var(--white);
+.bg-clip {
     clip-path: polygon(0% 100%, 80% 100%, 100% 0%, 0% 0%);
 }
 
@@ -162,7 +149,7 @@ a {
 }
 
 .image {
-    border-radius: 5px;
+    max-width: 100%;
 }
 
 .top-filler {
@@ -185,4 +172,25 @@ a {
 
 .card-s {
     flex-basis: 250px;
+}
+
+.product-tile {
+    padding-top: var(--p-l);
+    padding-right: var(--p-l);
+}
+
+.product-tile-content {
+    padding: var(--p-m);
+    position: relative;
+    top: -50px;
+    right: -20px;
+    background-color: var(--black);
+    color: var(--white);
+    border-top: var(--white) 5px solid;
+    border-left: var(--white) 5px solid;
+
+}
+
+.product-tile-text {
+    max-width: 85%;
 }
