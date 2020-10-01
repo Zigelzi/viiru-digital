@@ -17,6 +17,9 @@
             <g-link @click.native="toggleNav" class="nav-item" to="/minusta/"
               >Minusta</g-link
             >
+            <g-link @click.native="toggleNav" class="nav-item" to="/palvelut/"
+              >Palvelut</g-link
+            >
           </div>
         </div>
       </div>

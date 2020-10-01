@@ -3,7 +3,56 @@
     <Layout>
       <section class="top-filler">
         <div class="container">
-          <div class="">
+          <div class="pb-xl">
+            <h1 class="text-xxl mb-xl">Palvelut</h1>
+            <div class="f-column-left">
+              <h2>Verkkosivut</h2>
+              <!-- <div>
+                <h3>Luotettavuus</h3>
+                <h3>Löydettävyys</h3>
+              </div> -->
+              <p>
+                Verkkosivujen on tarkoitus tuoda sinut näkyväksi verkossa,
+                rakentaa asiakkaidesi luottamusta yritystäsi ja palveluitasi
+                kohtaan ja auttaa erottumaan kilpailijoista.
+              </p>
+              <p>
+                Toteutan sivuja jotka ovat niin käytettävyydeltään, ulkoasultaan
+                kun tekniikaltaan huippuluokkaa.
+              </p>
+              <p>
+                Kun työskentelet kanssani, saat pitkäaikaisen ja luotettavan
+                kumppanin jonka puoleen voit kääntyä aina kun sinulla tulee
+                huolia tai ideoita digitaalisiin palveluihin ja verkkosivuihin
+                liittyen.
+              </p>
+            </div>
+            <div class="f-column-right">
+              <h2>Tuotekonsultointi</h2>
+              <p>
+                Jos mielessäsi on mahtava idea, mutta ajattelet ettei sinulla
+                ole osaamista toteuttaa sitä, olet oikeassa paikassa.
+              </p>
+              <p>
+                Digitaalisen palvelun tuotekehitystä ei kannata aloittaa
+                ensimmäisenä koodaamisesta. Pysähdytään hetkeksi ja määritellään
+                tuotten idea, rakenne ja tarkoitus yhdessä. Näin pääset pienellä
+                investoinnilla liikkeelle ja säästät valtavan määrän aikaa
+                toteutusvaiheessa.
+              </p>
+              <p>
+                Käytännössä tämä tarkoittaa sitä, että istutaan yhdessä alas
+                noin puolen päivän ajaksi ja kerätään vastaukset mm. seuraaviin
+                kysymyksiin.
+              </p>
+              <ul>
+                <li>Kuka käyttää tuotettasi?</li>
+                <li>Minkälaisen lisäarvon tuotteesi tarjoaa käyttäjälle?</li>
+              </ul>
+            </div>
+            <p></p>
+          </div>
+          <div class="" id="website-project">
             <h3 class="text-xl mt-l mb-xl">Verkkosivujen toteutus</h3>
             <div class="project-step" v-vpshow>
               <v-icon
@@ -31,7 +80,6 @@
                 löytyvät ja että sivun asettelu on haluamasi mukainen.
               </p>
             </div>
-
             <div class="project-step" v-vpshow>
               <v-icon
                 :iconName="'coding'"

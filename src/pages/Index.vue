@@ -50,9 +50,7 @@
                   Paranna yrityksesi tunnettavuutta ja löydettävyyttä nopeasti
                   toimivilla ja helposti löydettävillä verkkosivuilla.
                 </p>
-                <g-link class="btn btn-solid" to="/tuotteet/"
-                  >Hanki verkkosivut</g-link
-                >
+                <g-link class="btn btn-solid" to="/palvelut/">Lue lisää</g-link>
               </div>
             </div>
             <div class="pv-m product-tile">
@@ -69,9 +67,7 @@
                   Hyödynnä yli 15 000 tunnin osaaminen digitaalisten palveluiden
                   kehittämisen parissa, designista julkaisuun.
                 </p>
-                <g-link class="btn btn-solid" to="/tuotteet/"
-                  >Hyödynnä osaaminen</g-link
-                >
+                <g-link class="btn btn-solid" to="/palvelut/">Lue lisää</g-link>
               </div>
             </div>
           </div>

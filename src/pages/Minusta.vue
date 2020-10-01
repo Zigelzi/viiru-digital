@@ -51,13 +51,6 @@
                 ei voi olla ilman rehellisyyttä.
               </p>
             </div>
-            <div class="card card-s">
-              <h2 class="card-title">Ystävällisyys</h2>
-              <p class="card-content">
-                Kunnioitetaan ja autetaan toinen toisiamme. Yhdessä pääsemme
-                pidemmälle.
-              </p>
-            </div>
           </div>
         </div>
       </section>
